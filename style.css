@@ -1,0 +1,28 @@
+.amazon-orange { background-color: #ff9900; }
+        .amazon-blue { background-color: #232f3e; }
+        .hover-lift:hover { transform: translateY(-4px); transition: all 0.3s ease; }
+        .hero-gradient { background: linear-gradient(135deg, #87ceeb 0%, #dda0dd 100%); }
+        .product-card { 
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+        .search-bar {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        .search-btn {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .alexa-logo {
+            font-family: 'Amazon Ember', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 2rem;
+            color: #4a5568;
+        }

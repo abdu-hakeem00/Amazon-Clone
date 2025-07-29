@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Homepage Clone - Enhanced with Product Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="amazon-blue text-white">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="text-3xl font-bold mr-6">
+                        <span class="text-white">amazon</span>
+                    </div>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-2xl mx-6">
+                    <div class="flex">
+                        <input 
+                            type="text" 
+                            placeholder="Search Amazon" 
+                            class="flex-1 px-4 py-2 text-black search-bar focus:outline-none"
+                        >
+                        <button class="amazon-orange px-4 py-2 search-btn hover:bg-yellow-600">
+                            <i class="fas fa-search text-black"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="flex items-center space-x-6 text-sm">
+                    <a href="#" class="hover:underline">Your Account</a>
+                    <a href="#" class="hover:underline">Help</a>
+                    <a href="#" class="hover:underline flex items-center">
+                        <i class="fas fa-shopping-cart mr-1"></i>Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="text-center flex-1">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                        Shop Amazon Devices<br>with Alexa
+                    </h1>
+                    <div class="alexa-logo mb-6">alexa</div>
+                </div>
+                <div class="flex-1 text-right">
+                    <img 
+                        src="https://assets.aboutamazon.com/dims4/default/e092ff4/2147483647/strip/true/crop/2000x1000+0+63/resize/1200x600!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Fa6%2F88%2F634ed7c74172b66cfe75e6f6bbaf%2Fdevices-2023-family-shot-1-copy-2.jpg" 
+                        alt="Amazon Devices" 
+                        class="w-full max-w-md mx-auto rounded-lg"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Prime Video Card -->
+                <div class="product-card p-6 hover-lift">
+                    <h3 class="text-xl font-bold mb-4">Prime Video</h3>
+                    <img 
+                        src="https://www.shutterstock.com/shutterstock/photos/495040519/display_1500/stock-photo-family-watching-tv-in-living-room-495040519.jpg" 
+                        alt="Family watching TV" 
+                        class="w-full h-48 object-cover rounded mb-4"
+                    >
+                    <a href="#" class="text-blue-600 hover:underline text-sm">Try 30 days for free</a>
+                </div>
+
+                <!-- Customers' most-loved -->
+                <div class="product-card p-6 hover-lift">
+                    <h3 class="text-xl font-bold mb-4">Customers' most-loved</h3>
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <div class="text-center">
+                            <img 
+                                src="https://www.shutterstock.com/image-photo/buttonup-dark-blue-blouse-women-600nw-1749396857.jpg" 
+                                alt="Women's fashion" 
+                                class="w-full h-20 object-cover rounded mb-2"
+                            >
+                            <p class="text-xs">Women's fashion</p>
+                        </div>
+                        <div class="text-center">
+                            <img 
+                                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6ef8f54a-1dda-49b8-9097-34c9c3dc766e/NIKE+COURT+VISION+LO+NN.png" 
+                                alt="Men's fashion" 
+                                class="w-full h-20 object-cover rounded mb-2"
+                            >
+                            <p class="text-xs">Men's fashion</p>
+                        </div>
+                        <div class="text-center">
+                            <img 
+                                src="https://img.freepik.com/premium-photo/cosmetic-skincare-products-white-background-glass-bottle-natural-oil-modern-concept-organic-beauty-trend-skin-care_105596-4392.jpg" 
+                                alt="Beauty" 
+                                class="w-full h-20 object-cover rounded mb-2"
+                            >
+                            <p class="text-xs">Beauty</p>
+                        </div>
+                        <div class="text-center">
+                            <img 
+                                src="https://m.media-amazon.com/images/I/71ac+yvz9HL._UF894,1000_QL80_.jpg" 
+                                alt="Home" 
+                                class="w-full h-20 object-cover rounded mb-2"
+                            >
+                            <p class="text-xs">Home</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 hover:underline text-sm">Discover items with 4+ stars</a>
+                </div>
+
+                <!-- Best Sellers in Outlet -->
+                <div class="product-card p-6 hover-lift">
+                    <h3 class="text-xl font-bold mb-4">Best Sellers in Outlet</h3>
+                    <img 
+                        src="https://m.media-amazon.com/images/I/51Vr9WxC9UL.jpg" 
+                        alt="Phone case with unicorn" 
+                        class="w-full h-48 object-cover rounded mb-4"
+                    >
+                    <a href="#" class="text-blue-600 hover:underline text-sm">Shop now</a>
+                </div>
+
+                <!-- Amazon exclusive toys -->
+                <div class="product-card p-6 hover-lift">
+                    <h3 class="text-xl font-bold mb-4">Amazon exclusive toys</h3>
+                    <img 
+                        src="https://m.media-amazon.com/images/I/61A6zmdNDbL.jpg" 
+                        alt="Child with toy" 
+                        class="w-full h-48 object-cover rounded mb-4"
+                    >
+                    <a href="#" class="text-blue-600 hover:underline text-sm">See more</a>
+                </div>
+
+                <!-- Small space solutions -->
+                <div class="product-card p-6 hover-lift">
+                    <h3 class="text-xl font-bold mb-4">Small space solutions</h3>
+                    <img 
+                        src="https://www.thespruce.com/thmb/vpHeK34Ht1RiEDKwaBeEolBBSwE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/EleanorEmail-5aaf1c6ec5cf45eea0a4cd70ddbd4b21.png" 
+                        alt="Small apartment furniture" 
+                        class="w-full h-48 object-cover rounded mb-4"
+                    >
+                    <a href="#" class="text-blue-600 hover:underline text-sm">Shop small space furniture & décor</a>
+                </div>
+
+                <!-- Save on pre-owned Amazon devices -->
+                <div class="product-card p-6 hover-lift">
+                    <h3 class="text-xl font-bold mb-4">Save on pre-owned Amazon devices</h3>
+                    <img 
+                        src="https://i.ebayimg.com/images/g/KQIAAOSwVTtkuVbf/s-l1200.jpg" 
+                        alt="Echo speaker" 
+                        class="w-full h-48 object-cover rounded mb-4"
+                    >
+                    <a href="#" class="text-blue-600 hover:underline text-sm">See all pre-owned devices</a>
+                </div>
+
+                <!-- Live plants & planters -->
+                <div class="product-card p-6 hover-lift">
+                    <h3 class="text-xl font-bold mb-4">Live plants & planters</h3>
+                    <img 
+                        src="https://m.media-amazon.com/images/I/81MRyPmBikL._UF1000,1000_QL80_.jpg" 
+                        alt="Plants in planters" 
+                        class="w-full h-48 object-cover rounded mb-4"
+                    >
+                    <a href="#" class="text-blue-600 hover:underline text-sm">Shop plants, plant care & pots</a>
+                </div>
+
+                <!-- Easy, elevated t-shirts -->
+                <div class="product-card p-6 hover-lift">
+                    <h3 class="text-xl font-bold mb-4">Easy, elevated t-shirts</h3>
+                    <img 
+                        src="https://www.shutterstock.com/image-photo/young-woman-blonde-hair-smiling-260nw-2477256347.jpg" 
+                        alt="Woman in white t-shirt" 
+                        class="w-full h-48 object-cover rounded mb-4"
+                    >
+                    <a href="#" class="text-blue-600 hover:underline text-sm">See the full edit from Shopbop</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="amazon-blue text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="text-3xl font-bold mb-4">amazon</div>
+                <div class="flex justify-center space-x-6 text-sm mb-4">
+                    <a href="#" class="hover:underline">Conditions of Use</a>
+                    <a href="#" class="hover:underline">Privacy Notice</a>
+                    <a href="#" class="hover:underline">Interest-Based Ads</a>
+                </div>
+                <p class="text-sm text-gray-400">© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add some interactive behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to product cards
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Add search functionality
+            const searchInput = document.querySelector('input[placeholder="Search Amazon"]');
+            const searchBtn = document.querySelector('.search-btn');
+            
+            searchBtn.addEventListener('click', function() {
+                if (searchInput.value.trim()) {
+                    alert('Searching for: ' + searchInput.value);
+                }
+            });
+
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && this.value.trim()) {
+                    alert('Searching for: ' + this.value);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
